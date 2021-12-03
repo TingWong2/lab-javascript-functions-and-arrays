@@ -24,7 +24,7 @@ function findLongestWord(array) {
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(nbs) {
-  if (nbs.length ===0) return 0;
+  if (nbs.length === 0) return 0;
   let total= 0;
     for (let i = 0; i < nbs.length; i++) {
       total += nbs[i]
@@ -35,20 +35,35 @@ function sumNumbers(nbs) {
 console.log(sumNumbers(numbers));
 
 // Iteration #3.1 Bonus:
-function sum() {}
+function sum(numbers) {
+  if (numbers.length === 0) return 0;
+  let count:0; 
+  for (let i= 0; i < numbers.length, i++){
+    if(typeof numbers[i]==="string") {
+      count += numbers[i].length; {  
+      }else (typeof numbers[i] ===='numbers || typeof numbers[i] === {
+        count += numbers [i];
+      }
+    }
+   
+  }
+  return count;  
+  
+}
 
 // Iteration #4: Calculate the average
 
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers(array) {
-  if (array.length === 0) return null;
+function averageNumbers(numbers) {
+  if (!numbers.length === 0) return null;
+  if (numbers.length === 1) return numbers [0];
   let total = 0;
-    for (let i = 0; i < array.length; i++) {
-      total += array[i]
+    for (let i = 0; i < numbers.length; i++) {
+      total += numbers[i]
     }
-    return total/array.length;
+    return total/numbers.length;
 }
 
 console.log(averageNumbers(numbersAvg));
@@ -56,13 +71,13 @@ console.log(averageNumbers(numbersAvg));
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength(array) {
-  if (array.length === 0) return null;
+function averageWordLength(words) {
+  if (words.length === 0) return null;
   let sum = 0; 
-    for (let i = 0; i < array.length; i++) {
-      sum = sum + array[i].length 
+    for (let i = 0; i < words.length; i++) {
+      sum = sum + words[i].length 
   }
-  return sum / array.length
+  return sum / words.length
 } 
 console.log(averageWordLength(wordsArr));
 
@@ -174,7 +189,9 @@ const matrix = [
   [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ];
 
-function greatestProduct() {}
+function greatestProduct() {
+
+}
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
